@@ -126,6 +126,7 @@ def game_hash
   }
 end
 
+<<<<<<< HEAD
 def num_points_scored(sought_player_name)
   game_hash.each do |_place, team|
     team.each do |attribute, data|
@@ -209,3 +210,9 @@ def big_shoe_rebounds
 
   num_rebounds
 end
+=======
+def num_points_scored(player_name)
+  game_hash[:home][:players].merge(game_hash[:away][:players])
+  binding.pry
+end
+>>>>>>> 25b81ed944ee8b405ed3e53f543224e8bf2468b3
